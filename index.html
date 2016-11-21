@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Porfolio - Saim Malik</title>
+
+    <!-- Import Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon_logo.png">
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- My Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- Custom Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Categories' Font -->
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:900' rel='stylesheet' type='text/css'>
+
+    <!-- Progress Bar Plugin CSS -->
+    <link href="css/circle.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/progress-circle.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                    <a id="initials" onclick="removeFocus('initials')" class="nameTitle navbar-brand" href="index.html">
+                        S<span class="fullName" style="display: none;">aim</span>
+                        M<span class="fullName" style="display: none;">alik</span>
+                    </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li onclick="removeFocus('myWork')" class="page-scroll">
+                        <a id="myWork" href="#portfolio">My Work</a>
+                    </li>
+                    <li onclick="removeFocus('aboutMe')" class="page-scroll">
+                        <a id="aboutMe" href="#about">About Me</a>
+                    </li>
+                    <li onclick="removeFocus('myEducation')" class="page-scroll">
+                        <a id="myEducation" href="#education">Education</a>
+                    </li>
+                    <li onclick="removeFocus('contactMe')" class="page-scroll">
+                        <a id="contactMe" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header class="greyBack">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="img-responsive customBorder" src="img/speed_vault_small.jpg" alt="">
+                    <div class="intro-text">
+                        <span class="name">Hi! My name is <span style="color: blue">Saim Malik</span></span>
+                        <hr class="soften">
+                        <span class="skills">3rd year Computer Science student at McMaster University. Welcome to my portfolio!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>My Work</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!-- <img src="img/portfolio/java-img-exact.jpg" class="img-responsive" alt=""> -->
+                        <div class="categories_wrapper cat1">
+                            <div class="category">Web Development</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!-- <img src="img/portfolio/python-img-exact.jpg" class="img-responsive" alt=""> -->
+                        <div class="categories_wrapper cat2">
+                            <div class="category">Plugins</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!-- <img src="img/portfolio/android-img-exact.jpg" class="img-responsive" alt=""> -->
+                        <div class="categories_wrapper cat3">
+                            <div class="category">Java</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!-- <img src="img/portfolio/web-img-exact.jpg" class="img-responsive" alt=""> -->
+                        <div class="categories_wrapper cat4">
+                            <div class="category">Python</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!-- <img src="img/portfolio/ai-img-exact.jpg" class="img-responsive" alt=""> -->
+                        <div class="categories_wrapper cat5">
+                            <div class="category">Mobile</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-sm-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!-- <img src="img/portfolio/other-img-exact.jpg" class="img-responsive" alt=""> -->
+                        <div class="categories_wrapper cat6">
+                            <div class="category">Other</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="greyBack" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About Me</h2>
+                    <hr class="soften">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>I am currently enrolled in the <span style="color:yellow">Computer Science</span> program at <span style="color:yellow">McMaster University</span>. I have a passion for programming and other creative skills such as animating, creating music and even cooking.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>During my spare time, I often work on <span style="color:yellow">designing/developing websites and mobile applications</span> for Android; some of which are listed under My Work section.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>My biggest strength is probably my ability to work with others. I really enjoy working in a <span style="color:yellow">team environment</span> and meeting new people. On the other hand, I am also very productive working independently. </p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <p style="color:white">To get a full description of my skills and qualifications, feel free to view my resume.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <a target="_blank" href="files/Resume.pdf" class="btn btn-lg btn-outline">
+                        <i class="fa fa-book"></i> Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Education</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <div class="title gpaTitle">GPA</div>
+
+                    <svg class="canvasProgBar">
+                        <circle cx="104" cy="104" r="101" class="circle" />
+                        <path id="progGPA" />
+                        <circle cx="104" cy="104" r="40" class="circle circleIn" />
+                        <text x="104" y="112" text-anchor="middle" font-size="20" font-weight="bold" font-family="Arial" fill="#2C3E50">3.7</text>
+                    </svg>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="title coursesTitle">Relevant Courses</div>
+
+                    <ul style="padding-left:5px">
+                        <div class="col-lg-12 col-md-12 col-sm-6">
+                                <li>Introduction to Computational Thinking</li>
+                                <li>Introduction to Programming</li>
+                                <li>Computer Science Practice and Experience: Basic Concepts</li>
+                                <li>Data Structure and Algorithms</li>
+                                <li>Computer Architecture</li>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12 col-sm-6">
+                                <li>Introduction to Software Development</li>
+                                <li>Principles of Programming</li>
+                                <li>Computer Science Practice and Experience: Software Development</li>
+                                <li>Computer Science Practice and Experience: Binding Theory to Practice</li>
+                        </div>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact Me</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2"> -->
+                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                    <!-- <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div id="success"></div>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer id="contact" class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4 footerLeft">
+                        <h3>Location</h3>
+                        <p>Located in Mississauga, Ontario, Canada<br>But looking for positions from around the world.</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Relevant Links</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.linkedin.com/pub/saim-malik/38/802/605" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/SaimM95" class="btn-social btn-outline"><i class="fa fa-fw fa-lg fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4 footerRight">
+                        <h3>Contact Info.</h3>                        
+                        <div class="footerContact">
+                            <div class="column">
+                                <div><i class="fa fa-envelope-o"></i></div>
+                                <div><i class="fa fa-mobile"></i></div>
+                            </div>
+                            <div class="column">
+                                <div>saim95@gmail.com</div>
+                                <div>+1(647)785-2502</div>
+                            </div>
+                        </div>                                   
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Saim Malik 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="circle"></div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <!-- Add this to class to make it only visible on small screens visible-xs visble-sm -->
+    <div id="mainTopBtn" class="scroll-top page-scroll" style="display:none">
+        <a class="btn btn-warning" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Web Development -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal close-button" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Web Development</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/cabin.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider1" class="slider-wrapper">
+                                <div class="arrows">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/kubernetes_logo.svg"></li>
+                                    <li class="slide"><img src="img/my_work/mcmaster_chaplain.jpg"></li>
+                                    <li class="slide"><img src="img/my_work/ink_island.jpg"></li>
+                                    <li class="slide"><img src="img/my_work/kubernetes_logo.svg"></li>
+                                </ul>
+
+                                <div class="image-number">1/3</div>
+                            </div>
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        I worked with <a href="http://www.quexor.com/" target="_blank">Quexor Group Inc.</a> to create this microsite. The purpose of this site was  to advertise the Kubernetes event that was being hosted by one of Quexor's clients, <strong>Google</strong>.<br>
+                                        Unfortunately I was asked to redirect the site once the event was finished. The site can still be viewed at the link below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="kubernetes/index.html" target="_blank">Kubernetes Launch</a></div>
+                                    </li>
+
+                                    <li class="description" style="display:none">
+                                        This website was made for a Chaplaincy center at McMaster University. Its main purpose is to simply provide the students (and others) with important information about the center. The website can be viewed at the link below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="http://mcmaster.ca/chaplain" target="_blank">McMaster Chaplaincy Centre</a></div>
+                                    </li>
+
+                                    <li class="description" style="display:none">
+                                        This e-Commerce website is for a local retail store that sells new and refurbished ink catridges (and some other stuff) called <a href="http://www.theinkfactory.ca/" target="_blank">Ink Factory</a>. The website was created using the Joomla framework and my job was to make some edits on both the backend and the front end. The website can be accessed from the link below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="http://inkisland.ca" target="_blank">Ink Island</a></div>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <!-- <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p> -->
+
+                            <!-- <ul class="list-inline item-details">
+                                <li>URL:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
+                                </li>
+                            </ul> -->
+
+                            <button type="button" class="btn btn-default close-button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Plugins -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Plugins</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider2" class="slider-wrapper">
+                                <div class="arrows hide">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide one coming-soon-parent">
+                                        <div class="coming-soon">Coming Soon</div>
+                                    </li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        COMING SOON!
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Java</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider3" class="slider-wrapper">
+                                <div class="arrows hide">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/connect_four.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        This Connect Four game was made by my group as a final project for one of the second year Computer Science courses. The project required us to have both PvP and PvPc functionalities in the game. To try out the game and/or see the source code, go to the link below.<br> 
+                                        PS. Good luck beating our awesome AI <i class="fa fa-smile-o"></i>
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://github.com/AhmedAKhan/2ME3Project" target="_blank">Connect Four Game - Github</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Python -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Python</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/game.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider4" class="slider-wrapper">
+                                <div class="arrows">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/unblock_me.jpg"></li>
+                                    <li class="slide"><img src="img/my_work/jumpy_ball.jpg"></li>
+                                    <li class="slide"><img src="img/my_work/balls_py.jpg"></li>
+                                    <li class="slide"><img src="img/my_work/unblock_me.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/3</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        This game, Unblock Me was given to us as a final project in one the Computer Science courses at the end of first year. This project helped us understand object oriented programming better and was just fun to work on.<br>
+                                        The game and source code could be downloaded from the link below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://github.com/SaimM95/Unblock_Me" target="_blank">Unblock Me - Github</a></div>
+                                    </li>
+
+                                    <li class="description">
+                                        I made this Papi Wall like game during the summer of 2014 for practice/fun purposes. The game turned out pretty good at the end and actually fun to play.<br>
+                                        To download the game, just go on the link below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://github.com/SaimM95/Jumpy_Ball" target="_blank">Jumpy Ball - Github</a></div>
+                                    </li>
+
+                                    <li class="description">
+                                        I built this application to challenge myself with GUI. It uses some 'thread' technology but essentially its just balls bouncing around.<br>
+                                        If you want to check it out, simply follow the link below.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://github.com/SaimM95/Bouncing_Balls" target="_blank">Bouncing Balls - Github</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mobile</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider5" class="slider-wrapper">
+                                <div class="arrows hide">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/tap_race.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        I made this simple game during the summer of 2014 to familiarize myself with Android development. The main goal was just to get some practice but I decided to upload it to the Play Store as well.<br>
+                                        It's compatible with most Android devices, so check it out at the link below and see if you can beat my hiscore.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://play.google.com/store/apps/details?id=com.sixstaarr.taprace" target="_blank">Tap Race - Google Play Store</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Other -->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Other</h2>
+                            <hr class="star-primary">
+                            <!-- <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt=""> -->
+
+                            <div id="slider6" class="slider-wrapper">
+                                <div class="arrows hide">
+                                    <div class="left"><i class="fa fa-chevron-left fa-lg"></i></div>
+                                    <div class="right"><i class="fa fa-chevron-right fa-lg"></i></div>
+                                </div>
+
+                                <ul class="slides">
+                                    <li class="slide"><img src="img/my_work/nasm_toh.jpg"></li>
+                                </ul>
+
+                                <div class="image-number">1/1</div>
+                            </div>
+
+
+                            <div class="description-wrapper">
+                                <ul class="descriptions">
+                                    <li class="description">
+                                        This was my final project for one of the second year Computer Science courses. The objective was to create an application that simulates a solution to the famous Towers of Hanoi game. The program is written in NASM along with supporting files written in C.
+                                        <div class="link"><span>Link:</span>&nbsp;<a href="https://github.com/SaimM95/Towers-of-Hanoi-NASM" target="_blank">NASM Towers of Hanoi - Github</a></div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button to go to the top of the page -->
+    <!-- <button id="topBtn" type="button" class="topBtn btn btn-danger">
+        <img src="img/top-arrow.png" style="width:35px; height:30px; margin-left:-3px; margin-top:-1px">
+    </button> -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/custom.js"></script>
+
+
+    <!-- Custom Slider -->
+    <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+
+
+</body>
+
+</html>
